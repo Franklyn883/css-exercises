@@ -8,6 +8,12 @@ body, html {
   height: 100%;
   padding: 16px;
   box-sizing: border-box;
+  /*made the changes here, by using responsive units, the grid will grow and shrink
+  according to the window size*/
+  display: grid;
+  grid-template-columns:1fr 3fr;
+  grid-template-rows: repeat(2, 1fr) 5fr 1fr;
+  gap: 15px;
 }
 
 .container div {
@@ -17,6 +23,8 @@ body, html {
   font-weight: bold;
   color: white;
   border-radius: 15px;
+ ;
+ 
 }
 
 .header {
